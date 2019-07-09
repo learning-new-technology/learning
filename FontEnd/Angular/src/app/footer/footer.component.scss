@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--dark);
+  color: white;
+  .footer-left {
+    h4 {
+      margin: 10px 0px;
+      text-shadow: 3px 2px 0px var(--gray);
+    }
+  }
+  .footer-right {
+    p {
+      margin: 13px 0px;
+    }
+  }
+}
