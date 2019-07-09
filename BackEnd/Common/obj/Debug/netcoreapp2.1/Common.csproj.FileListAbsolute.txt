@@ -1,0 +1,9 @@
+D:\Research\QLCV\Common\bin\Debug\netcoreapp2.1\Common.deps.json
+D:\Research\QLCV\Common\bin\Debug\netcoreapp2.1\Common.dll
+D:\Research\QLCV\Common\bin\Debug\netcoreapp2.1\Common.pdb
+D:\Research\QLCV\Common\obj\Debug\netcoreapp2.1\Common.csproj.CoreCompileInputs.cache
+D:\Research\QLCV\Common\obj\Debug\netcoreapp2.1\Common.AssemblyInfoInputs.cache
+D:\Research\QLCV\Common\obj\Debug\netcoreapp2.1\Common.AssemblyInfo.cs
+D:\Research\QLCV\Common\obj\Debug\netcoreapp2.1\Common.dll
+D:\Research\QLCV\Common\obj\Debug\netcoreapp2.1\Common.pdb
+D:\Research\QLCV\Common\obj\Debug\netcoreapp2.1\Common.csprojAssemblyReference.cache
