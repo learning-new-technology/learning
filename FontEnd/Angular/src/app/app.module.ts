@@ -19,6 +19,7 @@ import { MessageService } from './message.service';
 
 import { RequestCache, RequestCacheWithMap } from './request-cache.service';
 import { InMemoryDataService } from './in-memory-data.service';
+import { HttpInterceptorProviders } from './http-interceptors/index';
 
 import { BsDropdownModule, TooltipModule, ModalModule } from 'ngx-bootstrap';
 
@@ -55,6 +56,7 @@ import { BsDropdownModule, TooltipModule, ModalModule } from 'ngx-bootstrap';
     HttpErrorHandler,
     MessageService,
     { provide: RequestCache, useClass: RequestCacheWithMap },
+    HttpInterceptorProviders,
   ],
   bootstrap: [AppComponent],
   exports: [BsDropdownModule, TooltipModule, ModalModule]

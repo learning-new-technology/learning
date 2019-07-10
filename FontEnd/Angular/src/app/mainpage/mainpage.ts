@@ -1,6 +1,8 @@
 export interface ReSorts {
-  Id: number;
-  Name: string;
-  Price: number;
-  Img: string;
+  id: number;
+  name: string;
+  address: string;
+  rating: number;
+  price: number;
+  image: string;
 }

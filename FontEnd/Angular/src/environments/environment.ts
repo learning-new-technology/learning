@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  APIReSorts: 'http://www.mocky.io/v2/5d240c992f00005900241653',
+  APIReSorts: 'http://localhost:44309/api/resort',
 };
 
 /*

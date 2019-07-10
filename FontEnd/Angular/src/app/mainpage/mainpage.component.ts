@@ -23,8 +23,7 @@ export class MainpageComponent implements OnInit {
   /** GET ReSorts */
   getResorts(): void {
     this.mainpageService.getResorts().subscribe(resorts => (
-      // this.resorts = resorts
-      console.log(resorts)
+      this.resorts = resorts
     ));
   }
 }
