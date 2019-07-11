@@ -6,3 +6,4 @@ D:\Research\QLCV\Models\obj\Debug\netcoreapp2.1\Models.AssemblyInfoInputs.cache
 D:\Research\QLCV\Models\obj\Debug\netcoreapp2.1\Models.AssemblyInfo.cs
 D:\Research\QLCV\Models\obj\Debug\netcoreapp2.1\Models.dll
 D:\Research\QLCV\Models\obj\Debug\netcoreapp2.1\Models.pdb
+D:\Research\QLCV\Models\obj\Debug\netcoreapp2.1\Models.csprojAssemblyReference.cache
