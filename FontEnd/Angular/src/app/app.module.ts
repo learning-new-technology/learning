@@ -4,11 +4,16 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientXsrfModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { BsDropdownModule, TooltipModule, ModalModule } from 'ngx-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChangeTextDirective } from './change-text.directive';
 import { AppBootstrapModule } from './app-bootstrap.module';
+
+import { RequestCache, RequestCacheWithMap } from './request-cache.service';
+import { InMemoryDataService } from './in-memory-data.service';
+import { HttpInterceptorProviders } from './http-interceptors/index';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,12 +21,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { MessagesComponent } from './messages/messages.component';
 import { HttpErrorHandler } from './http-error-handler.service';
 import { MessageService } from './message.service';
-
-import { RequestCache, RequestCacheWithMap } from './request-cache.service';
-import { InMemoryDataService } from './in-memory-data.service';
-import { HttpInterceptorProviders } from './http-interceptors/index';
-
-import { BsDropdownModule, TooltipModule, ModalModule } from 'ngx-bootstrap';
+import { DetailresortsComponent } from './detailresorts/detailresorts.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { BsDropdownModule, TooltipModule, ModalModule } from 'ngx-bootstrap';
     FooterComponent,
     MainpageComponent,
     MessagesComponent,
+    DetailresortsComponent,
   ],
   imports: [
     BrowserModule,
