@@ -1,0 +1,9 @@
+D:\Research\QLCV\Models\bin\Release\netcoreapp2.1\Models.deps.json
+D:\Research\QLCV\Models\bin\Release\netcoreapp2.1\Models.dll
+D:\Research\QLCV\Models\bin\Release\netcoreapp2.1\Models.pdb
+D:\Research\QLCV\Models\obj\Release\netcoreapp2.1\Models.csprojAssemblyReference.cache
+D:\Research\QLCV\Models\obj\Release\netcoreapp2.1\Models.csproj.CoreCompileInputs.cache
+D:\Research\QLCV\Models\obj\Release\netcoreapp2.1\Models.AssemblyInfoInputs.cache
+D:\Research\QLCV\Models\obj\Release\netcoreapp2.1\Models.AssemblyInfo.cs
+D:\Research\QLCV\Models\obj\Release\netcoreapp2.1\Models.dll
+D:\Research\QLCV\Models\obj\Release\netcoreapp2.1\Models.pdb

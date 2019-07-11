@@ -1,0 +1,14 @@
+D:\Research\QLCV\BusinessDomain\bin\Release\netcoreapp2.1\BusinessDomain.deps.json
+D:\Research\QLCV\BusinessDomain\bin\Release\netcoreapp2.1\BusinessDomain.dll
+D:\Research\QLCV\BusinessDomain\bin\Release\netcoreapp2.1\BusinessDomain.pdb
+D:\Research\QLCV\BusinessDomain\bin\Release\netcoreapp2.1\Common.dll
+D:\Research\QLCV\BusinessDomain\bin\Release\netcoreapp2.1\Models.dll
+D:\Research\QLCV\BusinessDomain\bin\Release\netcoreapp2.1\Common.pdb
+D:\Research\QLCV\BusinessDomain\bin\Release\netcoreapp2.1\Models.pdb
+D:\Research\QLCV\BusinessDomain\obj\Release\netcoreapp2.1\BusinessDomain.csprojAssemblyReference.cache
+D:\Research\QLCV\BusinessDomain\obj\Release\netcoreapp2.1\BusinessDomain.csproj.CoreCompileInputs.cache
+D:\Research\QLCV\BusinessDomain\obj\Release\netcoreapp2.1\BusinessDomain.AssemblyInfoInputs.cache
+D:\Research\QLCV\BusinessDomain\obj\Release\netcoreapp2.1\BusinessDomain.AssemblyInfo.cs
+D:\Research\QLCV\BusinessDomain\obj\Release\netcoreapp2.1\BusinessDomain.csproj.CopyComplete
+D:\Research\QLCV\BusinessDomain\obj\Release\netcoreapp2.1\BusinessDomain.dll
+D:\Research\QLCV\BusinessDomain\obj\Release\netcoreapp2.1\BusinessDomain.pdb
