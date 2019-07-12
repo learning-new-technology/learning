@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { ReSorts } from './mainpage';
 import { MainPageService } from './mainpage.service';
@@ -13,7 +14,8 @@ export class MainpageComponent implements OnInit {
   resorts: ReSorts[];
 
   constructor(
-    private mainpageService: MainPageService
+    private mainpageService: MainPageService,
+    private router: Router,
   ) { }
 
   ngOnInit() {
@@ -23,8 +25,11 @@ export class MainpageComponent implements OnInit {
   /** GET ReSorts */
   getResorts(): void {
     this.mainpageService.getResorts().subscribe(resorts => (
-      // this.resorts = resorts
-      console.log(resorts)
+      this.resorts = resorts
     ));
+  }
+
+  goToDetail(id: number): void {
+    this.router.navigate(['/resorts', id]);
   }
 }

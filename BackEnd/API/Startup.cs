@@ -39,6 +39,15 @@ namespace API
             {
                 app.UseHsts();
             }
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .WithExposedHeaders("Content-Disposition", "Content-Length")
+            );
+            if (env.IsDevelopment()) {
+                app.UseDeveloperExceptionPage(); // Beautifull exception pages!
+            }
             //app.UseHttpsRedirection();
             app.UseMvc(routes =>
             {
