@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { map, switchMap  } from 'rxjs/operators';
+import { FormGroup, FormControl } from '@angular/forms';
 
 import { DetailResorts } from './detailresorts';
 import { DetailResortsService } from './detailresorts.service';
@@ -14,6 +15,11 @@ import { DetailResortsService } from './detailresorts.service';
 export class DetailresortsComponent implements OnInit {
   resorts: DetailResorts;
   paramId: number;
+  profileForm = new FormGroup({
+    name: new FormControl(''),
+    address: new FormControl(''),
+    price: new FormControl(''),
+  });
 
   constructor(
     private route: ActivatedRoute,
@@ -32,5 +38,11 @@ export class DetailresortsComponent implements OnInit {
     this.detailResortsService.getDetailResorts(id).subscribe(resorts => (
       this.resorts = resorts
     ));
+  }
+
+  /** POST Detail ReSorts */
+  onSubmit() {
+    // TODO: Use EventEmitter with form value
+    console.warn(this.profileForm.value);
   }
 }

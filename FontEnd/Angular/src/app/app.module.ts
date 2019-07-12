@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientXsrfModule } from '@angular/common/http';
@@ -35,6 +35,7 @@ import { DetailresortsComponent } from './detailresorts/detailresorts.component'
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientXsrfModule.withOptions({
       cookieName: 'lerning-Xsrf-Cookie',
       headerName: 'lerning-Xsrf-Header',
