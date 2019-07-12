@@ -12,3 +12,17 @@ D:\Research\QLCV\BusinessDomain\bin\Debug\netcoreapp2.1\Models.pdb
 D:\Research\QLCV\BusinessDomain\obj\Debug\netcoreapp2.1\BusinessDomain.csproj.CopyComplete
 D:\Research\QLCV\BusinessDomain\bin\Debug\netcoreapp2.1\Common.dll
 D:\Research\QLCV\BusinessDomain\bin\Debug\netcoreapp2.1\Common.pdb
+D:\learning\BackEnd\BusinessDomain\bin\Debug\netcoreapp2.1\BusinessDomain.deps.json
+D:\learning\BackEnd\BusinessDomain\bin\Debug\netcoreapp2.1\BusinessDomain.dll
+D:\learning\BackEnd\BusinessDomain\bin\Debug\netcoreapp2.1\BusinessDomain.pdb
+D:\learning\BackEnd\BusinessDomain\bin\Debug\netcoreapp2.1\Common.dll
+D:\learning\BackEnd\BusinessDomain\bin\Debug\netcoreapp2.1\Models.dll
+D:\learning\BackEnd\BusinessDomain\bin\Debug\netcoreapp2.1\Common.pdb
+D:\learning\BackEnd\BusinessDomain\bin\Debug\netcoreapp2.1\Models.pdb
+D:\learning\BackEnd\BusinessDomain\obj\Debug\netcoreapp2.1\BusinessDomain.csprojAssemblyReference.cache
+D:\learning\BackEnd\BusinessDomain\obj\Debug\netcoreapp2.1\BusinessDomain.csproj.CoreCompileInputs.cache
+D:\learning\BackEnd\BusinessDomain\obj\Debug\netcoreapp2.1\BusinessDomain.AssemblyInfoInputs.cache
+D:\learning\BackEnd\BusinessDomain\obj\Debug\netcoreapp2.1\BusinessDomain.AssemblyInfo.cs
+D:\learning\BackEnd\BusinessDomain\obj\Debug\netcoreapp2.1\BusinessDomain.csproj.CopyComplete
+D:\learning\BackEnd\BusinessDomain\obj\Debug\netcoreapp2.1\BusinessDomain.dll
+D:\learning\BackEnd\BusinessDomain\obj\Debug\netcoreapp2.1\BusinessDomain.pdb

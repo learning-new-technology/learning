@@ -7,3 +7,12 @@ D:\Research\QLCV\Models\obj\Debug\netcoreapp2.1\Models.AssemblyInfo.cs
 D:\Research\QLCV\Models\obj\Debug\netcoreapp2.1\Models.dll
 D:\Research\QLCV\Models\obj\Debug\netcoreapp2.1\Models.pdb
 D:\Research\QLCV\Models\obj\Debug\netcoreapp2.1\Models.csprojAssemblyReference.cache
+D:\learning\BackEnd\Models\bin\Debug\netcoreapp2.1\Models.deps.json
+D:\learning\BackEnd\Models\bin\Debug\netcoreapp2.1\Models.dll
+D:\learning\BackEnd\Models\bin\Debug\netcoreapp2.1\Models.pdb
+D:\learning\BackEnd\Models\obj\Debug\netcoreapp2.1\Models.csprojAssemblyReference.cache
+D:\learning\BackEnd\Models\obj\Debug\netcoreapp2.1\Models.csproj.CoreCompileInputs.cache
+D:\learning\BackEnd\Models\obj\Debug\netcoreapp2.1\Models.AssemblyInfoInputs.cache
+D:\learning\BackEnd\Models\obj\Debug\netcoreapp2.1\Models.AssemblyInfo.cs
+D:\learning\BackEnd\Models\obj\Debug\netcoreapp2.1\Models.dll
+D:\learning\BackEnd\Models\obj\Debug\netcoreapp2.1\Models.pdb

@@ -720,23 +720,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Thanh.dn\\.nuget\\packages\\": {},
+    "C:\\Users\\binh.na\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Research\\QLCV\\BusinessDomain\\BusinessDomain.csproj",
+      "projectUniqueName": "D:\\learning\\BackEnd\\BusinessDomain\\BusinessDomain.csproj",
       "projectName": "BusinessDomain",
-      "projectPath": "D:\\Research\\QLCV\\BusinessDomain\\BusinessDomain.csproj",
-      "packagesPath": "C:\\Users\\Thanh.dn\\.nuget\\packages\\",
-      "outputPath": "D:\\Research\\QLCV\\BusinessDomain\\obj\\",
+      "projectPath": "D:\\learning\\BackEnd\\BusinessDomain\\BusinessDomain.csproj",
+      "packagesPath": "C:\\Users\\binh.na\\.nuget\\packages\\",
+      "outputPath": "D:\\learning\\BackEnd\\BusinessDomain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Thanh.dn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\binh.na\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -749,11 +749,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Research\\QLCV\\Common\\Common.csproj": {
-              "projectPath": "D:\\Research\\QLCV\\Common\\Common.csproj"
+            "D:\\learning\\BackEnd\\Common\\Common.csproj": {
+              "projectPath": "D:\\learning\\BackEnd\\Common\\Common.csproj"
             },
-            "D:\\Research\\QLCV\\Models\\Models.csproj": {
-              "projectPath": "D:\\Research\\QLCV\\Models\\Models.csproj"
+            "D:\\learning\\BackEnd\\Models\\Models.csproj": {
+              "projectPath": "D:\\learning\\BackEnd\\Models\\Models.csproj"
             }
           }
         }

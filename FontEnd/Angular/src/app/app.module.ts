@@ -22,6 +22,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { HttpErrorHandler } from './http-error-handler.service';
 import { MessageService } from './message.service';
 import { DetailresortsComponent } from './detailresorts/detailresorts.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { DetailresortsComponent } from './detailresorts/detailresorts.component'
     MainpageComponent,
     MessagesComponent,
     DetailresortsComponent,
+    NotfoundComponent,
   ],
   imports: [
     BrowserModule,

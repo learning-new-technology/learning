@@ -4,8 +4,9 @@
 
 export const environment = {
   production: false,
-  APIReSorts: 'http://localhost:44309/api/resort',
-  APIDetailResorts: 'http://localhost:44309/api/resort',
+  APIReSorts: 'http://localhost:44367/api/resort',
+  APIDetailResorts: 'http://localhost:44367/api/resortdetail/{0}',
+  APIUpdateResorts: 'http://localhost:44367/api/updateresort',
 };
 
 /*
