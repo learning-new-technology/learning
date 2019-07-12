@@ -32,5 +32,16 @@ namespace Models.Dto
             [DataMember(Order = 2, Name = "message", IsRequired = false, EmitDefaultValue = false)]
             public string Message { get; set; } = "";
         }
+
+        [Serializable]
+        [DataContract]
+        public class ToBool
+        {
+            [DataMember(Order = 1, Name = "status", IsRequired = true)]
+            public bool IsSuccess { get; set; } = true;
+
+            [DataMember(Order = 2, Name = "message", IsRequired = false, EmitDefaultValue = false)]
+            public string Message { get; set; } = "";
+        }
     }
 }

@@ -56,7 +56,7 @@ namespace QLCV
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Resort}/{action=Index}/{id?}");
             });
         }
     }

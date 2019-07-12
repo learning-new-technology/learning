@@ -39,7 +39,7 @@ namespace API
             {
                 app.UseHsts();
             }
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseMvc(routes =>
             {
                 routes.MapRoute("default", "{controller=Resort}/{action=GetResort}/{id?}");

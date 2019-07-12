@@ -1,0 +1,297 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="~/css/lobibox.min.css" />
+    <style>
+        body {
+            background-color:aliceblue;
+        }
+        .rainbow-text {
+            background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div style="width:95%; margin:auto; text-align:center;">
+        <h1 class="rainbow-text" style="font-family:'Microsoft Sans Serif'">RESEARCH .NET CORE</h1>
+    </div>
+    <hr />
+    <div class="container" style="text-align:center;">
+        <div class="row">
+            <div class="col-sm-3 btn btn-light">A</div>
+            <div class="col-sm-3 btn btn-light">B</div>
+            <div class="col-sm-3 btn btn-light">C</div>
+            <div class="col-sm-3 btn btn-light">D</div>
+        </div>
+    </div>
+    <hr />
+    <div style="width:95%; margin:auto;">
+        <table id="table_resort" class="display table table-bordered">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                    <th>Image</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <hr />
+
+    <!-- Modal Update -->
+    <div class="modal fade" id="modal_edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal_title">Update</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" id="form_user" role="form" data-toggle="validator">
+                        <div class="form-group">
+                            <label for="txt_Name" class="col-sm-3 control-label">Name</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="txt_Name" placeholder="Name..." />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_Address" class="col-sm-3 control-label">Address</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="txt_Address" name="address" placeholder="Address..." />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_Price" class="col-sm-3 control-label">Price</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="txt_Price" name="price" placeholder="Price..." />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sl_rating" class="col-sm-3 control-label">Rating</label>
+                            <div class="col-sm-6">
+                                <select class="form-control text-search-select2 single-select2" id="sl_rating" name="role" style="width: 100%">
+                                    <option value="1">★</option>
+                                    <option value="2">★★</option>
+                                    <option value="3">★★★</option>
+                                    <option value="4">★★★★</option>
+                                    <option value="5">★★★★★</option>
+                                </select>
+                            </div>
+                        </div>
+                        @*<div class="form-group">
+                                <label for="txt_password"
+                                       class="col-sm-3 control-label">Image</label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control" id="txt_password" name="password" placeholder="Mật khẩu..." />
+                                </div>
+                            </div>*@
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-modal-close" data-dismiss="modal">Close</button>
+                    <button type="button" id="btn_Save" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Remove -->
+    <div class="modal fade" id="modal_remove" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal_title">Remove</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <span style="color: red;">Are you sure ???</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-modal-close" data-dismiss="modal">Close</button>
+                    <button type="button" id="btn_Remove" class="btn btn-danger">Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="~/js/lobibox.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var table_resort = $("#table_resort").DataTable({
+                initComplete: function (settings, json) {
+                    $("#table_resort").on('click', '.btn-edit-data', function () {
+                        var _data = $(this).data('json').replace(/\'/g, '"');
+                        var _data_json = JSON.parse(_data);
+                        $("#txt_Name").val(_data_json.name);
+                        $("#txt_Address").val(_data_json.address);
+                        $("#txt_Price").val(_data_json.price);
+                        $("#sl_rating").val(_data_json.rating);
+                        $("#btn_Save").data('id', _data_json.id);
+                        $("#modal_edit").modal('show');
+                    });
+
+                    $("#table_resort").on('click', '.btn-remove-data', function () {
+                        $("#btn_Remove").data('id', $(this).data('id'));
+                        $("#modal_remove").modal('show');
+                    });
+                },
+                ajax: {
+                    url: "/Resort/LoadResort",
+                    type: 'GET',
+                    "dataSrc": function (json) {
+                        return json;
+                    }
+                },
+                columns: [
+                    //{
+                    //    "data": "id",
+                    //    className: 'text-center',
+                    //    width: "50px",
+                    //    render: function (obj, msg, data, col) {
+                    //        return '<span>' + obj.Id + '</span>';
+                    //    },
+                    //},
+                    {
+                        orderable: false,
+                        searchable: false,
+                        width: "20px",
+                        className: 'text-left',
+                        render: function (data, type, full, meta) {
+                            return '<span>' + (parseInt(meta.row) + meta.settings._iDisplayStart + 1) + '</span>';
+                        },
+                    },
+                    {
+                        "data": "id",
+                        className: 'text-left',
+                        width: "100px",
+                        render: function (obj, msg, data, col) {
+                            return '<span>' + data.name + '</span>';
+                        }
+                    },
+                    {
+                        "data": "id",
+                        className: 'text-left',
+
+                        render: function (obj, msg, data, col) {
+                            return '<span>' + data.address + '</span>';
+                        }
+                    },
+                    {
+                        "data": "id",
+                        className: 'text-right',
+                        width: "100px",
+                        render: function (obj, msg, data, col) {
+                            return '<span style="color: green;">' + data.price + ' $</span>';
+                        }
+                    },
+                    {
+                        "data": "id",
+                        className: 'text-left',
+                        width: "100px",
+                        render: function (obj, msg, data, col) {
+                            var star = "";
+                            for (var i = 0; i < data.rating; i++) {
+                                star += "★";
+                            }
+                            return '<span style="color: gold;">' + star + '</span>';
+                        }
+                    },
+                    {
+                        "data": "id",
+                        className: 'text-left',
+                        render: function (obj, msg, data, col) {
+                            return '<span><a data-fancybox="gallery" href = "' + data.image + '" > <img src="' + data.image + '" height="30" width="30"></a></span>';
+                        }
+                    },
+                    {
+                        "data": "id",
+                        className: 'text-left',
+                        width: "150px",
+                        render: function (obj, msg, data, col) {
+                            var string = '<button type="button" data-toggle="modal" data-target="#modal_edit" class="btn btn-primary btn-xs btn-edit-data" data-id="' + data.id + '" data-json="' + JSON.stringify(data).replace(/\"/g, '\'') + '"><i class="fas fa-pencil-alt"></i> Update </button>\
+                                                      <button type="button" data-toggle="modal" data-target="#modal_remove" class="btn btn-danger btn-xs btn-remove-data" data-id="' + data.id + '"><i class="fas fa-trash-alt"></i> Remove </button>';
+                            return '<span>' + string + '</span>';
+                        }
+                    }
+                ]
+            });
+
+            $("#btn_Save").on('click', function () {
+                var _resort = {
+                    id: $("#btn_Save").data('id'),
+                    name: $("#txt_Name").val(),
+                    address: $("#txt_Address").val(),
+                    price: $("#txt_Price").val(),
+                    rating: $("#sl_rating").val(),
+                };
+                $.ajax({
+                    url: '/Resort/UpdateResort',
+                    type: 'POST',
+                    dataType: 'JSON',
+                    data: {
+                        resort: _resort
+                    },
+                    success: function (result) {
+                        if (result == true) {
+                            notification('OK !', "success");
+                            table_resort.ajax.reload();
+                        }
+                        else {
+                            alert('Fail');
+                        }
+                        $(".btn-modal-close").click();
+                    }
+                });
+            });
+
+            $("#btn_Remove").on('click', function () {
+                var _id = $(this).data('id');
+                $.ajax({
+                    url: '/Resort/RemoveResort',
+                    type: 'POST',
+                    dataType: 'JSON',
+                    data: {
+                        Id: _id
+                    },
+                    success: function (result) {
+                        if (result == true) {
+                            alert('OK');
+                            table_resort.ajax.reload();
+                        }
+                        else {
+                            alert('Fail');
+                        }
+                        $(".btn-modal-close").click();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -3530,7 +3530,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "BusinessDomain >= 1.0.0",
       "DataAccess >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
@@ -3565,9 +3564,6 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Research\\QLCV\\BusinessDomain\\BusinessDomain.csproj": {
-              "projectPath": "D:\\Research\\QLCV\\BusinessDomain\\BusinessDomain.csproj"
-            },
             "D:\\Research\\QLCV\\DataAccess\\DataAccess.csproj": {
               "projectPath": "D:\\Research\\QLCV\\DataAccess\\DataAccess.csproj"
             }
